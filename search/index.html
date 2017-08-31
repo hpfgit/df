@@ -1,0 +1,167 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>高级搜索 - Powered by EmpireCMS</title>
+<link href="/skin/default/css/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="/skin/default/js/tabs.js"></script>
+<script src="/e/data/images/setday.js"></script>
+</head>
+<body class="listpage">
+<style>
+.nav-list li {
+margin-left:20px !important;
+}
+table {
+ width:1200px;
+margin:0 auto;
+text-align:left;
+}
+</style>
+<div class="header">
+<div class="logo center">
+<div class="topl">
+    <a href="/" class="logo-p">河北鼎峰招标咨询有限公司</a>
+    <p>HEBEI DINGFENG TENDERING CONSULTING CO. LTD</p>
+</div>
+
+        <form method="post" action="/e/search/index.php" name="searchform" class="form1">
+            <input type="hidden" name="show" value="title" />
+            <input type="hidden" name="tempid" value="1" />
+            <input type="hidden" name="tbname" value="news" />
+            <input type="text" name="keyboard" placeholder="请输入您想搜索的" class="text">
+            <input type="submit" value="搜索" class="btn">
+        </form>
+</div>
+<div class="nav center">
+    <ul class="nav-list clearfix">
+        <li><a href="/">首页</a></li>
+        <li><a href="/guanyudingfeng/">关于鼎峰</a></li>
+        <li><a href="/qiyewenhua/">企业文化</a></li>
+        <li><a href="/yewufanwei/">业务范围</a></li>
+        <li><a href="/xinwendongtai/">新闻动态</a></li>
+        <li><a href="/rencaizhaopin/">人才招聘</a></li>
+        <li><a href="/zaixianliuyan/">在线留言</a></li>
+        <li><a href="/lianxiwomen/">联系我们</a></li>
+    </ul>
+</div>
+<div class="banner">
+        <ul class="banner-list clearfix">
+            <li style="width: 1903px;">
+                <a href=""><img src="/skin/default/images/about.jpg" alt=""></a>
+            </li>
+            <!--<li><a href=""><img src="/skin/default/images/banner1.jpg" alt=""></a></li>-->
+            <!--<li><a href=""><img src="/skin/default/images/banner2.jpg" alt=""></a></li>-->
+        </ul>
+    </div>
+
+<table width="100%" border="0" cellspacing="10" cellpadding="0" class="table cetnter">
+	<tr valign="top">
+		<td class="list_content"><table width="100%" border="0" cellspacing="0" cellpadding="0" class="position">
+				<tr>
+					<td>现在的位置：<a href='/'>首页</a>&nbsp;>&nbsp;<a href='../search/'>高级搜索</a>&nbsp;></td>
+				</tr>
+			</table>
+			<table width="100%" border="0" cellspacing="0" cellpadding="0" class="box">
+				<tr>
+					<td><table width="100%" border="0" cellpadding="0" cellspacing="0">
+						<tr>
+							<td><form action='/e/search/index.php' method="post" name="search_news" id="search_news">
+									<table width="100%" border="0" cellspacing="0" cellpadding="0">
+										<tr>
+											<td width="54%"><table width="100%" border="0" cellpadding="6" cellspacing="0">
+													<tr>
+														<td bgcolor="#F4F4F4"><strong>搜索范围</strong></td>
+													</tr>
+											</table></td>
+											<td width="46%"><table width="100%" border="0" cellpadding="6" cellspacing="0">
+													<tr>
+														<td bgcolor="#F4F4F4"><strong>搜索栏目</strong></td>
+													</tr>
+											</table></td>
+										</tr>
+										<tr>
+											<td valign="top"><table width="100%" border="0" cellpadding="6" cellspacing="0">
+													<tr>
+														<td><input type="radio" name="show" value="title" checked="checked" />
+															标题
+															<input type="radio" name="show" value="smalltext" />
+															简介
+															<input type="radio" name="show" value="newstext" />
+															内容
+															<input type="radio" name="show" value="writer" />
+															作者
+															<input name="show" type="radio" value="title,smalltext,newstext,writer" />
+															不限</td>
+													</tr>
+												</table>
+													<br />
+													<table width="100%" border="0" cellpadding="6" cellspacing="0">
+														<tr bgcolor="#F4F4F4">
+															<td><strong>时间限制</strong><font color="#666666">(0000-00-00为不限制)</font></td>
+														</tr>
+														<tr>
+															<td height="30" valign="top">从
+																<input name="starttime" type="text" value="0000-00-00" size="12" onclick="setday(this)" />
+																到
+																<input name="endtime" type="text" value="0000-00-00" size="12" onclick="setday(this)" />
+																之间的数据</td>
+														</tr>
+														<tr>
+															<td bgcolor="#F4F4F4"><strong>价格限制</strong><font color="#666666">(商城模型中有效,0为不限制)</font></td>
+														</tr>
+														<tr>
+															<td>从
+																<input name="startprice" type="text" id="startprice" value="0" size="6" />
+																到
+																<input name="endprice" type="text" id="endprice" value="0" size="6" />
+																元之间</td>
+														</tr>
+												</table></td>
+											<td valign="top"><table width="100%" border="0" cellspacing="6" cellpadding="0">
+													<tr>
+														<td><select name="classid" size="8" id="select2" style="width: 100%;height:112px">
+																<option value="0" selected="selected">所有栏目</option>
+															<option value='1' style='background:#99C4E3'>|-关于鼎峰</option><option value='26' style='background:#99C4E3'>|-企业文化</option><option value='2'>|-业务范围</option><option value='21' style='background:#99C4E3'>&nbsp;&nbsp;|-招标代理</option><option value='22' style='background:#99C4E3'>&nbsp;&nbsp;|-工程咨询</option><option value='24' style='background:#99C4E3'>&nbsp;&nbsp;|-PPP项目咨询</option><option value='25' style='background:#99C4E3'>&nbsp;&nbsp;|-政府采购</option><option value='37' style='background:#99C4E3'>&nbsp;&nbsp;|-造价咨询</option><option value='3'>|-新闻动态</option><option value='7' style='background:#99C4E3'>&nbsp;&nbsp;|-公司新闻</option><option value='8' style='background:#99C4E3'>&nbsp;&nbsp;|-行业动态</option><option value='5' style='background:#99C4E3'>|-在线留言</option><option value='33' style='background:#99C4E3'>|-人才招聘</option><option value='34' style='background:#99C4E3'>|-联系我们</option><option value='9' style='background:#99C4E3'>|-中标公告</option><option value='10' style='background:#99C4E3'>|-招标公告</option><option value='11'>|-经典案例</option><option value='28' style='background:#99C4E3'>&nbsp;&nbsp;|-招标代理</option><option value='29' style='background:#99C4E3'>&nbsp;&nbsp;|-工程咨询</option><option value='30' style='background:#99C4E3'>&nbsp;&nbsp;|-造价咨询</option><option value='31' style='background:#99C4E3'>&nbsp;&nbsp;|-PPP项目咨询</option><option value='32' style='background:#99C4E3'>&nbsp;&nbsp;|-政府采购</option><option value='12' style='background:#99C4E3'>|-公司简介</option><option value='13' style='background:#99C4E3'>|-发展历程</option><option value='14' style='background:#99C4E3'>|-公司理念</option><option value='15' style='background:#99C4E3'>|-组织架构</option><option value='16' style='background:#99C4E3'>|-公司资质</option><option value='17' style='background:#99C4E3'>|-总公司</option><option value='18' style='background:#99C4E3'>|-子公司</option><option value='19' style='background:#99C4E3'>|-分公司</option><option value='27' style='background:#99C4E3'>|-登陆</option>
+          
+														</select></td>
+													</tr>
+												</table>
+													<table width="100%" border="0" cellpadding="6" cellspacing="0">
+														<tr>
+															<td bgcolor="#F4F4F4"><strong>结果显示</strong></td>
+														</tr>
+														<tr>
+															<td height="30"><select name="orderby" id="select4">
+																	<option value="">按发布日期</option>
+																	<option value="id">信息ID</option>
+																	<option value="plnum">评论数</option>
+																	<option value="onclick">人气</option>
+																	<option value="totaldown">下载数</option>
+																</select>
+																	<select name="myorder" id="select5">
+																		<option value="0">倒序排列</option>
+																		<option value="1">顺序排列</option>
+																	</select>
+															</td>
+														</tr>
+												</table></td>
+										</tr>
+									</table>
+								<table width="100%" border="0" cellpadding="4" cellspacing="0">
+										<tr>
+											<td>关键字：
+												<input name="keyboard" type="text" id="keyboard2" size="60" />
+													<input type="submit" name="Submit22" value="搜索" />
+											</td>
+										</tr>
+									</table>
+							</form></td>
+						</tr>
+					</table></td>
+				</tr>
+			</table></td>
+	</tr>
+</table>
+</body>
+</html>

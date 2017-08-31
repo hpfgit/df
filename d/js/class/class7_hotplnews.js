@@ -1,0 +1,1 @@
+document.write("<li><a href=\"/xinwendongtai/gongsixinwen/2017-07-21/34.html\" title=\"国务院办公厅关于印发政务信息系统 整合共享实施方案的通知\">国务院办公厅关于印发政务信息系统</a></li><li><a href=\"/xinwendongtai/gongsixinwen/2017-08-17/82.html\" title=\"一文搞定：定金、订金、押金、保证金、违约金，再也不会混淆了！\">一文搞定：定金、订金、押金、保证金</a></li>");
